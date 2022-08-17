@@ -11,7 +11,7 @@ export default [
     title: 'Products API',
     description: 'RESTful API with an Array of 20 products',
     icon: <SiWikidata />,
-    features: ['easy json structure'],
+    features: ['basic json structure'],
     url: 'https://kb-furniture-api.herokuapp.com/api/v1/products',
   },
   {
@@ -53,7 +53,7 @@ export default [
   //   url: '#',
   // },
   // {
-  //   title: 'Tours API',
+  //   title: 'Flights API',
   //   description:
   //     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea voluptas aliquid suscipit doloribus, deserunt molestias dolor eaque error maiores fugit!',
   //   icon: <MdOutlineTour />,
