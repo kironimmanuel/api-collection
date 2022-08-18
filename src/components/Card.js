@@ -1,16 +1,19 @@
 import { nanoid } from 'nanoid'
 import styled from 'styled-components'
 
-const Api = ({ title, description, icon, url, features }) => {
+const Api = ({ title, description, icon, url, features, disabled }) => {
   return (
     <Wrapper>
       <article
         className="card"
+        style={disabled ? { pointerEvents: 'none', opacity: '0.5' } : {}}
         target="_blank"
         onClick={() => window.open(url)}>
-        <div className="icon">{icon}</div>
-        <h4>{title}</h4>
-        <div className="underline" />
+        <div className="flex-box">
+          <div className="icon">{icon}</div>
+          <h4>{title}</h4>
+        </div>
+        {/* <div className="underline" /> */}
         <p>{description}</p>
         <div className="features">
           {features.map(feature => {
@@ -43,6 +46,12 @@ const Wrapper = styled.div`
       box-shadow: var(--shadow-4);
       background: var(--primary-3);
     }
+    .flex-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
     .underline {
       width: 3rem;
       height: 0.12rem;
@@ -57,10 +66,10 @@ const Wrapper = styled.div`
     }
   }
   .icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .features {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .features span {
     display: inline-block;

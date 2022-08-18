@@ -10,6 +10,10 @@ function App() {
       <header>
         <h1>API Library</h1>
         <div className="underline" />
+        <p>
+          Collection of RESTful APIs with added security packages including:{' '}
+          <strong>xss-clean, cors, helmet</strong>
+        </p>
       </header>
       <section className="section api-section">
         <div className="section-center container">
@@ -31,6 +35,9 @@ const Wrapper = styled.main`
       text-align: center;
       margin: 2rem;
     }
+  }
+  p {
+    text-align: center;
   }
   .container {
     display: grid;
