@@ -12,7 +12,7 @@ export default [
     description: 'Array of 20 products',
     icon: <SiWikidata />,
     features: ['GET'],
-    url: 'https://kb-furniture-api.herokuapp.com/api/v1/products',
+    url: 'https://kb-products-api.herokuapp.com/api/v1/products',
   },
   {
     title: 'Reviews API',
@@ -26,7 +26,7 @@ export default [
     description: 'For implementing a contact database',
     icon: <GrContactInfo />,
     features: ['crud functionality', 'bcryptjs'],
-    url: 'https://kb-contact-api.herokuapp.com/',
+    url: 'https://kb-contacts-api.herokuapp.com/',
   },
   {
     title: 'E-Commerce API',
