@@ -1,8 +1,9 @@
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { BiTransfer } from 'react-icons/bi'
-import { BsCurrencyBitcoin, BsFillChatRightQuoteFill } from 'react-icons/bs'
+import { BsChatLeftDots, BsCurrencyBitcoin } from 'react-icons/bs'
 import { CgWorkAlt } from 'react-icons/cg'
-import { GrContactInfo } from 'react-icons/gr'
+import { GrContact, GrContactInfo } from 'react-icons/gr'
+import { IoIosContacts } from 'react-icons/io'
 import { MdOutlineRealEstateAgent, MdOutlineTour } from 'react-icons/md'
 import { SiWikidata } from 'react-icons/si'
 
@@ -17,14 +18,14 @@ export default [
   {
     title: 'Reviews API',
     description: 'Array of 50 reviews',
-    icon: <BsFillChatRightQuoteFill />,
+    icon: <BsChatLeftDots />,
     features: ['GET'],
     url: 'https://kb-reviews-api.herokuapp.com/api/v1/reviews',
   },
   {
     title: 'Contacts API',
     description: 'For implementing a contact database',
-    icon: <GrContactInfo />,
+    icon: <IoIosContacts />,
     features: ['crud functionality', 'bcryptjs'],
     url: 'https://kb-contacts-api.herokuapp.com/',
   },
@@ -41,7 +42,7 @@ export default [
     icon: <MdOutlineRealEstateAgent />,
     features: ['GET'],
     url: '#',
-    disabled: true,
+    disabled: 'disabled',
   },
   {
     title: 'Flights API',
@@ -49,7 +50,7 @@ export default [
     icon: <MdOutlineTour />,
     features: ['GET'],
     url: '#',
-    disabled: true,
+    disabled: 'disabled',
   },
   {
     title: 'Jobs API',
@@ -57,7 +58,7 @@ export default [
     icon: <CgWorkAlt />,
     features: ['crud functionality', 'bcryptjs'],
     url: '#',
-    disabled: true,
+    disabled: 'disabled',
   },
   {
     title: 'Crypto API',
@@ -65,7 +66,7 @@ export default [
     icon: <BsCurrencyBitcoin />,
     features: ['crud functionality', 'bcryptjs'],
     url: '#',
-    disabled: true,
+    disabled: 'disabled',
   },
   {
     title: 'Online Banking API',
@@ -73,6 +74,6 @@ export default [
     icon: <BiTransfer />,
     features: ['crud functionality', 'bcryptjs'],
     url: '#',
-    disabled: true,
+    disabled: 'disabled',
   },
 ]

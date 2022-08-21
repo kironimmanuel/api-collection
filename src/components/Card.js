@@ -5,15 +5,13 @@ const Api = ({ title, description, icon, url, features, disabled }) => {
   return (
     <Wrapper>
       <article
-        className="card"
-        style={disabled ? { pointerEvents: 'none', opacity: '0.5' } : {}}
+        className={disabled ? 'card disabled' : 'card'}
         target="_blank"
         onClick={() => window.open(url)}>
         <div className="flex-box">
           <div className="icon">{icon}</div>
           <h4>{title}</h4>
         </div>
-        {/* <div className="underline" /> */}
         <p>{description}</p>
         <div className="features">
           {features.map(feature => {
@@ -34,7 +32,7 @@ export default Api
 const Wrapper = styled.div`
   .card {
     box-shadow: var(--light-shadow);
-    background: var(--clr-white);
+    background: var(--primary-500);
     margin-bottom: 1rem;
     border-radius: var(--radius);
     text-align: center;
@@ -44,13 +42,14 @@ const Wrapper = styled.div`
     padding: 1rem;
     &:hover {
       box-shadow: var(--shadow-4);
-      background: var(--primary-3);
+      background: var(--primary-600);
     }
     .flex-box {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 1rem;
+      margin-top: 0.3rem;
     }
     .underline {
       width: 3rem;
@@ -66,20 +65,26 @@ const Wrapper = styled.div`
     }
   }
   .icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: var(--clr-font-50) !important;
+    margin-top: -0.5rem;
   }
   .features {
     margin-bottom: 0.5rem;
   }
   .features span {
     display: inline-block;
-    background: var(--primary-5);
-    color: var(--clr-white);
+    background: var(--primary-600);
+    color: var(--clr-font-100);
     margin: 0.25rem;
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.7rem;
+  }
+  .disabled {
+    pointer-events: none;
+    background: var(--primary-700);
   }
 `

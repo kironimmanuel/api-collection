@@ -48,31 +48,23 @@ const Wrapper = styled.div`
     display: grid;
     place-items: center;
     height: auto;
-    font-size: 0.9rem;
-  }
-  .footer .social-icons {
-    margin-bottom: 2rem;
-  }
-  .footer .social-icon {
-    color: var(--primary-4);
-  }
-  .footer .social-icon:hover {
-    color: var(--grey-5);
+    font-size: 0.8rem;
   }
   .footer p {
-    color: var(--primary-4);
+    color: var(--clr-font-200);
+    opacity: 0.5;
     padding: 0 0.5rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-weight: 500;
     a {
-      color: var(--grey-6);
+      color: var(--clr-font-100);
     }
   }
   @media screen and (min-width: 992px) {
     .footer p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 `
