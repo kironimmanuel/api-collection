@@ -51,7 +51,7 @@ const Wrapper = styled.div`
     font-size: 0.8rem;
   }
   .footer p {
-    color: var(--clr-font-200);
+    color: var(--primary-900);
     opacity: 0.5;
     padding: 0 0.5rem;
     margin-left: auto;
@@ -59,7 +59,7 @@ const Wrapper = styled.div`
     text-align: center;
     font-weight: 500;
     a {
-      color: var(--clr-font-100);
+      color: var(--primary-800);
     }
   }
   @media screen and (min-width: 992px) {

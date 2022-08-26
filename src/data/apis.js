@@ -2,12 +2,11 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { BiTransfer } from 'react-icons/bi'
 import { BsChatLeftDots, BsCurrencyBitcoin } from 'react-icons/bs'
 import { CgWorkAlt } from 'react-icons/cg'
-import { GrContact, GrContactInfo } from 'react-icons/gr'
 import { IoIosContacts } from 'react-icons/io'
 import { MdOutlineRealEstateAgent, MdOutlineTour } from 'react-icons/md'
 import { SiWikidata } from 'react-icons/si'
 
-export default [
+const apis = [
   {
     title: 'Products API',
     description: 'Array of 20 products',
@@ -77,3 +76,5 @@ export default [
     disabled: 'disabled',
   },
 ]
+
+export default apis

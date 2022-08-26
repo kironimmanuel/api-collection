@@ -32,7 +32,7 @@ export default Api
 const Wrapper = styled.div`
   .card {
     box-shadow: var(--light-shadow);
-    background: var(--primary-500);
+    background: var(--primary-50);
     margin-bottom: 1rem;
     border-radius: var(--radius);
     text-align: center;
@@ -42,7 +42,6 @@ const Wrapper = styled.div`
     padding: 1rem;
     &:hover {
       box-shadow: var(--shadow-4);
-      background: var(--primary-600);
     }
     .flex-box {
       display: flex;
@@ -66,7 +65,7 @@ const Wrapper = styled.div`
   }
   .icon {
     font-size: 1.5rem;
-    color: var(--clr-font-50) !important;
+    color: var(--clr-black) !important;
     margin-top: -0.5rem;
   }
   .features {
@@ -74,8 +73,9 @@ const Wrapper = styled.div`
   }
   .features span {
     display: inline-block;
-    background: var(--primary-600);
-    color: var(--clr-font-100);
+    font-family: var(--ff-special);
+    background: var(--clr-grey-3);
+    color: var(--clr-grey-10);
     margin: 0.25rem;
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
@@ -84,7 +84,8 @@ const Wrapper = styled.div`
     font-size: 0.7rem;
   }
   .disabled {
+    opacity: 0.75;
     pointer-events: none;
-    background: var(--primary-700);
+    background: var(--primary-50);
   }
 `

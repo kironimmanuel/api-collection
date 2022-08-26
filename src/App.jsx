@@ -8,10 +8,10 @@ function App() {
   return (
     <Wrapper>
       <header>
-        <h1>API Library</h1>
+        <h1>API Collection</h1>
         <div className="underline" />
         <p>
-          Collection of RESTful APIs with added security packages including:{' '}
+          RESTful APIs with added security packages including:{' '}
           <strong>xss-clean, cors, helmet</strong>
         </p>
       </header>
@@ -33,11 +33,12 @@ const Wrapper = styled.main`
   header {
     h1 {
       text-align: center;
-      margin: 2rem;
+      margin: 1.5rem;
     }
-  }
-  p {
-    text-align: center;
+    p {
+      text-align: center;
+      margin: 1rem 2rem;
+    }
   }
   .container {
     display: grid;
