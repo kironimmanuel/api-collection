@@ -13,6 +13,7 @@ const apis = [
     icon: <SiWikidata />,
     features: ['GET'],
     url: 'https://kb-products-api.herokuapp.com/api/v1/products',
+    disabled: false,
   },
   {
     title: 'Reviews API',
@@ -20,6 +21,7 @@ const apis = [
     icon: <BsChatLeftDots />,
     features: ['GET'],
     url: 'https://kb-reviews-api.herokuapp.com/api/v1/reviews',
+    disabled: false,
   },
   {
     title: 'Contacts API',
@@ -27,6 +29,7 @@ const apis = [
     icon: <IoIosContacts />,
     features: ['crud functionality', 'bcryptjs'],
     url: 'https://kb-contacts-api.herokuapp.com/',
+    disabled: false,
   },
   {
     title: 'E-Commerce API',
@@ -34,6 +37,7 @@ const apis = [
     icon: <AiOutlineShoppingCart />,
     features: ['crud functionality', 'bcryptjs'],
     url: 'https://kb-e-commerce-api.herokuapp.com/',
+    disabled: false,
   },
   {
     title: 'Real Estate API',
@@ -41,7 +45,7 @@ const apis = [
     icon: <MdOutlineRealEstateAgent />,
     features: ['GET'],
     url: '#',
-    disabled: 'disabled',
+    disabled: true,
   },
   {
     title: 'Flights API',
@@ -49,7 +53,7 @@ const apis = [
     icon: <MdOutlineTour />,
     features: ['GET'],
     url: '#',
-    disabled: 'disabled',
+    disabled: true,
   },
   {
     title: 'Jobs API',
@@ -57,7 +61,7 @@ const apis = [
     icon: <CgWorkAlt />,
     features: ['crud functionality', 'bcryptjs'],
     url: '#',
-    disabled: 'disabled',
+    disabled: true,
   },
   {
     title: 'Crypto API',
@@ -65,7 +69,7 @@ const apis = [
     icon: <BsCurrencyBitcoin />,
     features: ['crud functionality', 'bcryptjs'],
     url: '#',
-    disabled: 'disabled',
+    disabled: true,
   },
   {
     title: 'Online Banking API',
@@ -73,7 +77,7 @@ const apis = [
     icon: <BiTransfer />,
     features: ['crud functionality', 'bcryptjs'],
     url: '#',
-    disabled: 'disabled',
+    disabled: true,
   },
 ]
 

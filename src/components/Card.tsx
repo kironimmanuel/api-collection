@@ -1,12 +1,20 @@
 import { nanoid } from 'nanoid'
 import styled from 'styled-components'
+import CardContent from '../models/card'
 
-const Api = ({ title, description, icon, url, features, disabled }) => {
+const Api = ({
+  title,
+  description,
+  icon,
+  url,
+  features,
+  disabled,
+}: CardContent): JSX.Element => {
   return (
     <Wrapper>
       <article
         className={disabled ? 'card disabled' : 'card'}
-        target="_blank"
+        // target="_blank"
         onClick={() => window.open(url)}>
         <div className="flex-box">
           <div className="icon">{icon}</div>
