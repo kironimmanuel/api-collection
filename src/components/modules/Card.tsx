@@ -1,6 +1,6 @@
-import { nanoid } from 'nanoid'
-import styled from 'styled-components'
-import CardContent from '../models/card'
+import { nanoid } from "nanoid";
+import styled from "styled-components";
+import CardContent from "../../models/card";
 
 const Api = ({
   title,
@@ -13,7 +13,7 @@ const Api = ({
   return (
     <Wrapper>
       <article
-        className={disabled ? 'card disabled' : 'card'}
+        className={disabled ? "card disabled" : "card"}
         // target="_blank"
         onClick={() => window.open(url)}>
         <div className="flex-box">
@@ -22,20 +22,20 @@ const Api = ({
         </div>
         <p>{description}</p>
         <div className="features">
-          {features.map(feature => {
+          {features.map((feature) => {
             return (
               <span key={nanoid()} className="feature-icon">
                 {feature}
               </span>
-            )
+            );
           })}
         </div>
       </article>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Api
+export default Api;
 
 const Wrapper = styled.div`
   .card {
@@ -96,4 +96,4 @@ const Wrapper = styled.div`
     pointer-events: none;
     background: var(--primary-50);
   }
-`
+`;

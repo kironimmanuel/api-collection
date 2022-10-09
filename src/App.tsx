@@ -1,8 +1,8 @@
-import { nanoid } from 'nanoid'
-import styled from 'styled-components'
-import Card from './components/Card'
-import Footer from './components/Footer'
-import apis from './data/apis'
+import { nanoid } from "nanoid";
+import styled from "styled-components";
+import { Footer } from "./components/layouts";
+import { Card } from "./components/modules";
+import apis from "./data/apis";
 
 function App() {
   return (
@@ -11,23 +11,23 @@ function App() {
         <h1>API Collection</h1>
         <div className="underline" />
         <p>
-          RESTful APIs with added security packages including:{' '}
+          RESTful APIs with added security packages including:{" "}
           <strong>xss-clean, cors, helmet</strong>
         </p>
       </header>
       <section className="section api-section">
         <div className="section-center container">
-          {apis.map(link => {
-            return <Card key={nanoid()} {...link} />
+          {apis.map((link) => {
+            return <Card key={nanoid()} {...link} />;
           })}
         </div>
       </section>
       <Footer />
     </Wrapper>
-  )
+  );
 }
 
-export default App
+export default App;
 
 const Wrapper = styled.main`
   header {
@@ -67,4 +67,4 @@ const Wrapper = styled.main`
       column-gap: 1rem;
     }
   }
-`
+`;
